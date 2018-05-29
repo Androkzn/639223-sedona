@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Андрей Лисов](https://up.htmlacademy.ru/htmlcss/21/user/639223).
-* Наставник: `Неизвестно`.
+* Студент: [Андрей Техтелев](https://up.htmlacademy.ru/htmlcss/21/user/639223).
+* Наставник: [Евгений Алипкин](https://htmlacademy.ru/profile/ealipkin).
 
 ---
 
