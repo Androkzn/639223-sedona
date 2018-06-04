@@ -2,11 +2,114 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Личный проект: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+      <header class="header">
+          <a class="header-logo">
+              <img src="http://placehold.it" width="138" height="70" alt="Logo City of Sedona">
+          </a>
+          <nav class="navigation">
+              <ul>
+                  <li><a href="info.html">Информация</a></li>
+                  <li><a href="foto-video.html">Фото и видео</a></li>
+                  <li><a href="state-map.html">Карта штата</a></li>
+                  <li><a href="hotels.html">Гостиницы</a></li>
+              </ul>
+          </nav>
+      </header>
+      <main class="container">
+          <div class="intro">
+              <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
+              <img class="intro-welcome" src="http://placehold.it" width="188" height="45" alt="Welcome">
+              <img class="intro-gorgeous" src="http://placehold.it" width="176" height="30" alt="to the gorgeous">
+              <img class="intro-sedona" src="http://placehold.it" width="458" height="78" alt="Sedona">
+              <img class="intro-because" src="http://placehold.it" width="296" height="80" alt="Because the Grand Canyon sucks!">
+          </div>   
+          <section class="about-sedona">
+              <h2 class="title">Седона небольшой городок в Аризоне,<br> заслуживающий большего</h2> 
+              <p class="text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          </section>                        
+          <section class="reason">
+              <h2 class="title">Настоящий городок</h2>
+              <span class="text">&nbsp;&mdash;№1&nbsp;&mdash;</span >
+              <p class="text">Cедона — не аттракцион для туристов, там течет своя жизнь</p>
+          </section>
+          <section class="advantages">
+              <ul>
+                  <li class="advantages-hotel">
+                      <h2 class="title">Жильё  </h2>
+                      <p class="text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                  </li>
+                  <li class="advantages-food">
+                      <h2 class="title">Еда</h2>
+                      <p class="text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  </li>
+                  <li class="advantages-souvenirs">
+                      <h2 class="title">Сувениры</h2>
+                      <p class="text">Не только китайского, но и местного производства!</p>
+                  </li>
+              </ul>
+          </section >             
+          <section class="reason reason-reverse">
+              <h2 class="title">Там есть Мост дьявола</h2>
+              <span  class="text">&nbsp;&mdash;№2 &nbsp;&mdash;</span >
+              <p class="text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>   
+          </section>
+          <section class="reason-block">
+              <ul>
+                  <li class="reason">
+                      <h2 class="title">Небольшая площадь</h2>
+                      <span  class="text">&nbsp;&mdash;№3&nbsp;&mdash;</span >
+                      <p class="text">Все достопримечательности  находятся очень близко</p>
+                  </li>
+                  <li class="reason">
+                      <h2 class="title">Красивая дорога</h2>
+                      <span class="text">&nbsp;&mdash;№4&nbsp;&mdash;</span >
+                      <p class="text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+                  </li>
+                  <li class="reason">
+                      <h2 class="title">Мало туристов</h2>
+                      <span  class="text">&nbsp;&mdash;№5&nbsp;&mdash;</span >
+                      <p class="text">Большинство едет в гранд каньон и толпится там</p>
+                  </li>
+              </ul>
+          </section>  
+          <section class="interested">
+              <h2 class="title">Заинтересовались?</h2> 
+              <p class="text">Укажите предполагаемые даты поездки,  и мы покажем вам лучшие пердложения гостиниц в Седоне</p>
+              <a  class="title">Поиск гостиницы в Седоне</a>
+          </section>
+          <section>
+              <h2 class="visually-hidden">Карта</h2>
+           <!-- Здесь будет карта-->
+          </section>
+          <footer>
+              <div calass="hashtag">#visitsedona</div>
+              <div calass="social-button">
+                  <ul>
+                      <li><a calass=social-button-twitter href="#">Твиттер</a></li>
+                      <li><a calass=social-button-facebook href="#">Фейсбук</a></li>
+                      <li><a calass=social-button-youtube href="#">Ютуб</a></li>              
+                  </ul>
+              </div>
+              <div calass="footer-logo">
+                  <ul>
+                      <li calass="footer-wisited">
+                          <p>wisited by</p>  
+                      </li>            
+                      <li>
+                          <a class="footer-academy" href="https://htmlacademy.ru/intensive/htmlcss/">
+                              <img src="http://placehold.it" width="115" height="41"> 
+                          </a>
+                      </li>
+                   </ul>
+              </div>       
+          </footer>
+          <section class="modal modal-search">
+              <!-- Здесь будет форма-->
+          </section>
+      </main>
   </body>
 </html>
