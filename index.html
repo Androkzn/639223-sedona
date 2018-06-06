@@ -8,7 +8,7 @@
   <body>
       <header class="header">
           <a class="header-logo">
-              <img src="http://placehold.it" width="138" height="70" alt="Logo City of Sedona">
+              <img src="img/main-logo.png" width="138" height="70" alt="Logo City of Sedona">
           </a>
           <nav class="navigation">
               <ul>
@@ -20,23 +20,24 @@
           </nav>
       </header>
       <main class="container">
-          <div class="intro">
+          <section class="intro">
               <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
-              <img class="intro-welcome" src="http://placehold.it" width="188" height="45" alt="Welcome">
-              <img class="intro-gorgeous" src="http://placehold.it" width="176" height="30" alt="to the gorgeous">
-              <img class="intro-sedona" src="http://placehold.it" width="458" height="78" alt="Sedona">
-              <img class="intro-because" src="http://placehold.it" width="296" height="80" alt="Because the Grand Canyon sucks!">
-          </div>   
+              <img  src="img/welcome.png" width="188" height="45" alt="Welcome">
+          </section>   
           <section class="about-sedona">
               <h2 class="title">Седона небольшой городок в Аризоне,<br> заслуживающий большего</h2> 
               <p class="text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </section>                        
-          <section class="reason">
-              <h2 class="title">Настоящий городок</h2>
-              <span class="text">&nbsp;&mdash;№1&nbsp;&mdash;</span >
-              <p class="text">Cедона — не аттракцион для туристов, там течет своя жизнь</p>
+          <section class="reason-promo">
+              <h2 class="visually-hidden">Первая причина приехать в Седону</h2>
+              <div class="reason">
+                  <h2 class="title">Настоящий городок</h2>
+                  <span class="text">&nbsp;&mdash;№1&nbsp;&mdash;</span >
+                  <p class="text">Cедона — не аттракцион для туристов, там течет своя жизнь</p>
+              </div> 
           </section>
           <section class="advantages">
+              <h2 class="visually-hidden">Преимущества Седоны</h2>
               <ul>
                   <li class="advantages-hotel">
                       <h2 class="title">Жильё  </h2>
@@ -52,12 +53,16 @@
                   </li>
               </ul>
           </section >             
-          <section class="reason reason-reverse">
-              <h2 class="title">Там есть Мост дьявола</h2>
-              <span  class="text">&nbsp;&mdash;№2 &nbsp;&mdash;</span >
-              <p class="text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>   
+          <section class="reason-promo reason-promo-reverse">
+              <h2 class="visually-hidden">Вторая причина приехать в Седону</h2>
+              <div class="reason">
+                  <h2 class="title">Там есть Мост дьявола</h2>
+                  <span  class="text">&nbsp;&mdash;№2 &nbsp;&mdash;</span >
+                  <p class="text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              </div>
           </section>
           <section class="reason-block">
+              <h2 class="visually-hidden">Другие причины приехать в Седону</h2>
               <ul>
                   <li class="reason">
                       <h2 class="title">Небольшая площадь</h2>
@@ -79,37 +84,29 @@
           <section class="interested">
               <h2 class="title">Заинтересовались?</h2> 
               <p class="text">Укажите предполагаемые даты поездки,  и мы покажем вам лучшие пердложения гостиниц в Седоне</p>
-              <a  class="title">Поиск гостиницы в Седоне</a>
+              <button class="title button-search">Поиск гостиницы в Седоне</button>
+              <form>
+               <!-- Здесь будет форма-->   
+              </form>
           </section>
-          <section>
+          <section class="map">
               <h2 class="visually-hidden">Карта</h2>
-           <!-- Здесь будет карта-->
-          </section>
-          <footer>
-              <div calass="hashtag">#visitsedona</div>
-              <div calass="social-button">
-                  <ul>
-                      <li><a calass=social-button-twitter href="#">Твиттер</a></li>
-                      <li><a calass=social-button-facebook href="#">Фейсбук</a></li>
-                      <li><a calass=social-button-youtube href="#">Ютуб</a></li>              
-                  </ul>
-              </div>
-              <div calass="footer-logo">
-                  <ul>
-                      <li calass="footer-wisited">
-                          <p>wisited by</p>  
-                      </li>            
-                      <li>
-                          <a class="footer-academy" href="https://htmlacademy.ru/intensive/htmlcss/">
-                              <img src="http://placehold.it" width="115" height="41"> 
-                          </a>
-                      </li>
-                   </ul>
-              </div>       
-          </footer>
-          <section class="modal modal-search">
-              <!-- Здесь будет форма-->
+              <!-- Здесь будет карта-->
           </section>
       </main>
+      <footer>
+          <div class="hashtag">#visitsedona</div>
+          <ul class="social-buttons">
+              <li><a class=social-button-twitter href="#">Твиттер</a></li>
+              <li><a class=social-button-facebook href="#">Фейсбук</a></li>
+              <li><a class=social-button-youtube href="#">Ютуб</a></li>             
+          </ul>
+          <div class="footer-logo">  
+              <a class="footer-academy" href="https://htmlacademy.ru/intensive/htmlcss/">
+                  <p>website by</p>   
+                  <img src="img/footer-logo.png" width="115" height="41"> 
+              </a>
+          </div>       
+      </footer>
   </body>
 </html>
