@@ -8,7 +8,7 @@
   <body>
       <header class="header">
           <a class="header-logo">
-              <img src="img/main-logo.png" width="138" height="70" alt="Logo City of Sedona">
+              <img src="img/main-logo.png" width="138" height="70" alt="Логотип города Седона">
           </a>
           <nav class="navigation">
               <ul>
@@ -22,7 +22,7 @@
       <main class="container">
           <section class="intro">
               <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
-              <img  src="img/welcome.png" width="188" height="45" alt="Welcome">
+              <img  src="img/welcome.png" width="458" height="352" alt="Welcome to Sedona">
           </section>   
           <section class="about-sedona">
               <h2 class="title">Седона небольшой городок в Аризоне,<br> заслуживающий большего</h2> 
@@ -84,27 +84,48 @@
           <section class="interested">
               <h2 class="title">Заинтересовались?</h2> 
               <p class="text">Укажите предполагаемые даты поездки,  и мы покажем вам лучшие пердложения гостиниц в Седоне</p>
-              <button class="title button-search">Поиск гостиницы в Седоне</button>
-              <form>
-               <!-- Здесь будет форма-->   
-              </form>
+              <button type="button" class="button button-search-hotel">Поиск гостиницы в Седоне</button>
+              <form class="search-hotels" method="post" action="https://echo.htmlacademy.ru">
+                  <ul>
+					  <li>
+					  	  <lable for="check-in-date">Дата заезда:</lable>
+						  <input type="date"  value="2017-04-21" name="check-in-date" id="check-in-date">   
+
+					  </li> 
+					  <li>
+						  <lable for="check-out-date">Дата выезда:</lable>
+						  <input type="date"  value="2017-06-04"  name="check-out-date" id="check-out-date"> 
+					  </li> 
+					  <li>
+					      <lable for="adult-number">Взрослые:</lable>
+						  <input type="number" value="2" name="adult-number" id="adult-number">
+				          <lable for="child-number">Дети:</lable>
+				          <input type="number" value="0" name="child-number" id="child-number">  
+					  </li>
+					  <li>
+					       <button type="submit" class=" button button-search">Найти</button>
+					  </li>
+				  </ul>
+			 </form>
           </section>
           <section class="map">
-              <h2 class="visually-hidden">Карта</h2>
-              <!-- Здесь будет карта-->
+              <h2 class="visually-hidden">Карта города Седона</h2>
+              <p>
+				  <img src="img/sedona-map.jpg" width="1200" height="593" alt="Карта города Седона"> 
+			  </p>
           </section>
       </main>
       <footer>
           <div class="hashtag">#visitsedona</div>
           <ul class="social-buttons">
-              <li><a class=social-button-twitter href="#">Твиттер</a></li>
-              <li><a class=social-button-facebook href="#">Фейсбук</a></li>
-              <li><a class=social-button-youtube href="#">Ютуб</a></li>             
+              <li><a class=social-button-twitter href="#" area-lable="Ссылка на Твиттер">Твиттер</a></li>
+              <li><a class=social-button-facebook href="#" area-lable="Ссылка на Фэйсбук">Фейсбук</a></li>
+              <li><a class=social-button-youtube href="#" area-lable="Ссылка на Ютуб">Ютуб</a></li>             
           </ul>
           <div class="footer-logo">  
               <a class="footer-academy" href="https://htmlacademy.ru/intensive/htmlcss/">
                   <p>website by</p>   
-                  <img src="img/footer-logo.png" width="115" height="41"> 
+                  <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML-Academy"> 
               </a>
           </div>       
       </footer>
