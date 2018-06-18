@@ -55,7 +55,7 @@ a {
 }
 	 
 .intro {
-  background-image: url("/img/welcome-background.jpg");
+  background-image: url("../img/welcome-background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   text-align: center;	
@@ -75,7 +75,7 @@ a {
 
 .reason-promo {
  background-color: #81b3d2;
- background-image: url("/img/reason-promo-background.jpg");
+ background-image: url("../img/reason-promo-background.jpg");
  background-repeat: no-repeat;
  text-align: center;
  color:#ffffff;
@@ -90,7 +90,7 @@ text-align: center;
 }
 
 .reason-promo-reverse {
- background-image: url("/img/reason-promo-reverse-background.jpg");
+ background-image: url("../img/reason-promo-reverse-background.jpg");
 }
 
 .reason-block ul {
@@ -177,7 +177,7 @@ text-align: center;
 }
 
 .filter {
-  background-image: url("/img/filter-background.jpg");
+  background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
   color: #ffffff;
 	
