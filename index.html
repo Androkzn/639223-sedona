@@ -9,22 +9,24 @@
   </head>
   <body>
       <header class="header">
-          <a class="header-logo">
-              <img src="img/main-logo.png" width="138" height="70" alt="Логотип города Седона">
-          </a>
-          <nav class="navigation">
-              <ul>
-                  <li><a href="info.html">Информация</a></li>
-                  <li><a href="foto-video.html">Фото и видео</a></li>
-                  <li><a href="state-map.html">Карта штата</a></li>
-                  <li><a href="hotels.html">Гостиницы</a></li>
+          <nav class="main-navigation">
+              <ul class="navigation">
+                  <li><a class="navigation-item" href="info.html">Информация</a></li>
+                  <li><a  class="navigation-item" href="foto-video.html">Фото и видео</a></li>
+                  <li>
+					  <a class="header-logo">
+              			<img src="img/main-logo.png" width="138" height="70" alt="Логотип города Седона">
+         			  </a> 
+				  </li>
+				  <li><a class="navigation-item" href="state-map.html">Карта штата</a></li>
+                  <li><a class="navigation-item" href="hotels.html">Гостиницы</a></li>
               </ul>
           </nav>
       </header>
       <main class="container">
           <section class="intro">
               <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
-              <img  src="img/welcome.png" width="458" height="352" alt="Welcome to Sedona">
+              <img  class="welcome-image" src="img/welcome.png" width="458" height="352" alt="Welcome to Sedona">
           </section>   
           <section class="about-sedona">
               <h2 class="title">Седона небольшой городок в Аризоне,<br> заслуживающий большего</h2> 
@@ -32,24 +34,24 @@
           </section>                        
           <section class="reason-promo">
               <h2 class="visually-hidden">Первая причина приехать в Седону</h2>
-              <div class="reason">
+              <div class="reason true-city">
                   <h2 class="title">Настоящий городок</h2>
                   <p class="text">&nbsp;&mdash;№1&nbsp;&mdash;</p>
                   <p class="text">Cедона — не аттракцион для туристов,<br> там течет своя жизнь</p>
               </div> 
           </section>
-          <section class="advantages">
+          <section>
               <h2 class="visually-hidden">Преимущества Седоны</h2>
-              <ul>
-                  <li class="advantages-hotel">
-                      <h2 class="title">Жильё  </h2>
+              <ul class="advantages">
+                  <li class="advantages-item advantages-item-hotel">
+                      <h2 class="title">Жильё </h2>
                       <p class="text">Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
                   </li>
-                  <li class="advantages-food">
+                  <li class="advantages-item advantages-item-food">
                       <h2 class="title">Еда</h2>
                       <p class="text">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
                   </li>
-                  <li class="advantages-souvenirs">
+                  <li class="advantages-item advantages-item-souvenirs">
                       <h2 class="title">Сувениры</h2>
                       <p class="text">Не только китайского, но и местного<br> производства!</p>
                   </li>
@@ -57,15 +59,15 @@
           </section >             
           <section class="reason-promo reason-promo-reverse">
               <h2 class="visually-hidden">Вторая причина приехать в Седону</h2>
-              <div class="reason">
+              <div class="reason devil-brige">
                   <h2 class="title">Там есть Мост дьявола</h2>
                   <p class="text">&nbsp;&mdash;№2 &nbsp;&mdash;</p>
                   <p class="text">Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
               </div>
           </section>
-          <section class="reason-block">
+          <section>
               <h2 class="visually-hidden">Другие причины приехать в Седону</h2>
-              <ul>
+              <ul class="reason-block">
                   <li class="reason">
                       <h2 class="title">Небольшая площадь</h2>
                       <p  class="text">&nbsp;&mdash;№3&nbsp;&mdash;</p>
@@ -87,7 +89,8 @@
               <h2 class="title">Заинтересовались?</h2> 
               <p class="text">Укажите предполагаемые даты поездки,<br>  и мы покажем вам лучшие пердложения гостиниц в Седоне</p>
               <button type="button" class="button button-search-hotel">Поиск гостиницы в Седоне</button>
-              <form class="search-hotels" method="post" action="https://echo.htmlacademy.ru">
+              <!--
+			  <form class="search-hotels" method="post" action="https://echo.htmlacademy.ru">
                   <ul>
 					  <li>
 					  	  <label for="check-in-date">Дата заезда:</label>
@@ -109,21 +112,34 @@
 					  </li>
 				  </ul>
 			 </form>
+          -->
           </section>
           <section class="map">
               <h2 class="visually-hidden">Карта города Седона</h2>
-              <img src="img/sedona-map.jpg" width="1200" height="593" alt="Карта города Седона"> 
+              <img src="img/sedona-map.jpg" width="1200" height="473" alt="Карта города Седона"> 
 	      </section>
       </main>
      <footer class="footer">
           <div class="hashtag">#visitsedona</div>
           <ul class="social-buttons">
-              <li><a class="social-button" href="#" area-label="Ссылка на Твиттер">Твиттер</a></li>
-              <li><a class="social-button" href="#" area-label="Ссылка на Фэйсбук">Фейсбук</a></li>
-              <li><a class="social-button" href="#" area-label="Ссылка на Ютуб">Ютуб</a></li>             
+              <li>
+				  <a class="social-button" href="#" area-label="Ссылка на Твиттер">
+				  	  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="currentColor" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
+				  </a>
+			  </li>
+              <li>
+				  <a class="social-button" href="#" area-label="Ссылка на Фэйсбук">
+				  	  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="currentColor" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+				  </a>
+			  </li>
+              <li>
+				  <a class="social-button" href="#" area-label="Ссылка на Ютуб">
+				  	  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="currentColor" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
+				  </a>
+			  </li>             
           </ul>
-          <div class="footer-logo">  
-              <a  href="https://htmlacademy.ru/intensive/htmlcss/">
+          <div>  
+              <a  class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss/">
                   <p>website by</p>   
                   <svg class="footer-academy-logo" width="115" height="41" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85"> 
 					  <title>logo-htmlacademy-small1</title>
