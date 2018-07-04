@@ -1076,7 +1076,7 @@ margin-left: auto;
 }
 
 .footer-map {
-  position: relative
+  position: relative;
 }
 
 .map {
@@ -1134,6 +1134,7 @@ margin-left: auto;
 .hashtag {
   margin: 0;
   padding: 0;
+  color: #000000;
 }
 
 
@@ -1192,11 +1193,13 @@ margin-left: auto;
   transition: color 0.5s ease;
 }
 
-.footer-academy-logo:hover {
+.footer-academy-logo:hover,
+.hashtag:hover{
  color: #81b3d2;
 }
 
-.footer-academy-logo:active {
+.footer-academy-logo:active,
+.hashtag:active{
  color:  #bdbbbc;
 }
 
