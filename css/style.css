@@ -116,7 +116,7 @@ margin-right: 93px;
 .intro img {
 	margin: 0;
 	padding: 0;
-	margin-top: 12px;
+	margin-top: 76px;
 	margin-bottom: 80px;
 }
 
@@ -980,7 +980,7 @@ display: block;
 	font-size: 14px;
   	line-height: 22px;
 	display: inline-block;
-	width: 114px;
+	min-width: 114px;
 	 
 }
 
