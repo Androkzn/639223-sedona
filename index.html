@@ -5,7 +5,7 @@
     <title>Личный проект: Седона</title>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -178,19 +178,6 @@
             </svg>
         </a>
     </footer>
-    <script>
-        var link = document.querySelector(".button-search-hotel");
-
-        var popup = document.querySelector(".form-show");
-
-        var form = popup.querySelector("form");
-
-        var checkin = popup.querySelector("[name=check-in-date]");
-
-        link.addEventListener("click", function(evt) {
-        popup.classList.toggle("modal-show");
-        checkin.focus();
-        });
-    </script>
+    <script src="js/script.min.js"></script>
 </body>
 </html>
